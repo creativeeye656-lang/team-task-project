@@ -34,7 +34,18 @@ function renderTasks(taskArray = tasks) {
 
     // TODO (Feature: Delete Task):
     // Add a delete button here to remove the task from the tasks array
+// دکمه حذف بسازد
+const deleteBtn = document.createElement("button");
+deleteBtn.textContent = "Delete";
+deleteBtn.className = "delete-btn";
 
+// وقتی روی دکمه کلیک شد، این تسک را از آرایه پاک کند
+deleteBtn.addEventListener("click", function () {
+  tasks = tasks.filter((t) => t.id !== task.id);
+  renderTasks();
+});
+
+li.appendChild(deleteBtn);
     taskList.appendChild(li);
   });
 
