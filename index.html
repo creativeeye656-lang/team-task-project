@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task List - Team Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>My Task List</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Write a new task..." required />
+      <button type="submit">Add</button>
+    </form>
+
+    <p id="taskCounter">0 tasks remaining</p>
+
+    <div id="filterButtons">
+      <button data-filter="all">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button id="clearCompleted">Clear completed</button>
+
+    <p class="footer-credit">A HunarX coding class team project</p>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

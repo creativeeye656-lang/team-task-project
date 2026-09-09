@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+body {
+  background: #0F172A;
+  color: #F1F5F9;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+h1 {
+  text-align: center;
+  color: #F7DF1E;
+}
+
+#taskForm {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1E293B;
+  color: #F1F5F9;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #F7DF1E;
+  color: #0F172A;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #E5CE1B;
+}
+
+#taskCounter {
+  text-align: center;
+  color: #94A3B8;
+}
+
+#filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1E293B;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+#taskList li.completed span {
+  text-decoration: line-through;
+  color: #94A3B8;
+}
+
+#clearCompleted {
+  display: block;
+  margin: 16px auto 0;
+  background: #F87171;
+}
+
+.footer-credit {
+  margin-top: 20px;
+  text-align: center;
+  color: #94A3B8;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
